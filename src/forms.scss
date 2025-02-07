@@ -1,0 +1,143 @@
+body{
+    background: #151724;
+}
+.form-wrapper{
+    .view-list{
+        top: 10px;
+        right: 20px;
+        cursor: pointer;
+        img{
+            color: #999;
+        }
+    }
+    background: #22243b;
+    color: #8a8c98;
+    font-family:'AfacadFlux-Medium';
+    width: 60%;
+    border-radius: 7px;
+    height: 100%;
+    padding: 50px;
+    .form-left{
+        display: inline-flex;
+        align-items: center;
+        justify-content:center;
+        width: 18%;
+        margin: 20px;
+        height: 208px;
+        border: 1px solid #464866;
+        border-radius: 4px;
+        padding: 30px;
+        float: left;
+       .img-parent{
+        
+        // height: 100px;
+        // width: 100px;
+        img{
+            max-width: 100%;
+        }
+       }
+       .replace_img{
+        position: absolute;
+        bottom: 10px;
+    }  
+    }
+    .form-right{
+        display: inline-block;
+        width: 69%;
+        label{
+            display: block;
+        }
+        input,select{
+            min-height: 35px;
+            border-radius: 4px;
+            background: #22243b;
+            border:1px solid #464866;
+            color: #eee;
+            width: 90%;
+            &:focus{
+                outline:none !important;
+                box-shadow: none !important;
+                border-bottom: 1px solid #464866 !important
+            }
+        }
+        .width-95{
+            width: 95%;
+        }
+
+    }
+    .btn-section{
+        button{
+            margin-top: 20px;
+            float: right;
+            min-height: 24px;
+            padding: 10px;
+            border:none;
+            margin-right: 10px;
+            border-radius: 4px;
+        }
+        .cancel-btn{
+           background-color: #15182d;
+           color: #808087;
+        }
+    }
+}
+@font-face{
+    font-family: 'AfacadFlux-Medium';
+    src: url('./fonts/AfacadFlux-Medium.ttf')format('truetype');
+}
+.error-msg{
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    bottom: -15px;
+    left: 0px;
+}
+
+
+
+// 
+.product-wrapper{
+    font-family:'AfacadFlux-Medium';
+    input{
+        min-height: 30px;
+        margin-left: 20px;
+        border-radius: 4px;
+    }
+    .error-msg{
+        left: 116px;
+    }
+}
+.productTable,.userTable{
+    margin: 20px;
+    font-family:'AfacadFlux-Medium';
+    background: #c5d7f1;
+    border-collapse: collapse;
+    width: 50%;
+    color: #15182d;
+    th{
+        border: 2px solid #15182d;
+        padding: 10px;
+        background:rgb(171 205 255);
+    }
+    tr{
+        td{
+            padding: 10px;
+            text-align: center;
+            border: 2px solid #15182d;
+            border-radius: 7px;
+        }
+        &:nth-child(even){
+            background: rgb(234 238 243);
+        }
+    }
+    .user-profileimage{
+        width: 60px;
+        height: 50px;
+        img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+    }
+}
+
